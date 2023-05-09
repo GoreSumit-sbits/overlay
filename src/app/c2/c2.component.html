@@ -1,0 +1,11 @@
+<div id="c2" class="box">
+  <h1>DATA</h1>
+  <app-loader *ngIf="load"></app-loader>
+  Name:<input type="text" name="name" />
+  <button class="button" *ngIf="isLoading" disabled="isLoading">
+    loading...
+  </button>
+  <button class="button" *ngIf="!isLoading" #myBtn (click)="onClick()">
+    submit
+  </button>
+</div>

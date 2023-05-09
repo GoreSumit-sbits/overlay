@@ -1,0 +1,13 @@
+<div id="c1" class="box">
+  <h1>DATA</h1>
+  <div *ngIf="this.service.loaderC1.value">
+    <app-loader ></app-loader>
+  </div>
+  Name:<input type="text" name="name" />
+  <button class="button" *ngIf="isLoading" disabled="isLoading">
+    loading...
+  </button>
+  <button class="button" *ngIf="!isLoading" #myBtn (click)="onClick()">
+    submit
+  </button>
+</div>

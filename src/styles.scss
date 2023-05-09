@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.box{
+    width: 200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;    
+    position:relative;
+
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: skyblue;
+    margin: 10px;
+    
+}
+.main{
+    display:flex;
+    gap: 20px;
+}
+
